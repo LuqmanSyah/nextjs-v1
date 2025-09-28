@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "docker:dev": "docker-compose up --build --watch",
+    "docker:dev:detach": "docker-compose up --build --watch -d",
+    "docker:stop": "docker-compose down",
+    "docker:logs": "docker-compose logs -f app",
+    "docker:shell": "docker-compose exec app sh"
   },
   "dependencies": {
     "react": "19.1.0",
